@@ -1,0 +1,291 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.App,
+#root {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+}
+
+header,
+main,
+section {
+  min-width: 20em;
+}
+
+#header {
+  height: 4.1875em;
+  left: 0px;
+  top: 0px;
+  background: #292929;
+  border: 1px solid #292929;
+  box-sizing: border-box;
+}
+
+#logo {
+  margin: 1rem auto 6.6875rem;
+  width: 6.75em;
+  height: 2.09875em;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+}
+
+#logo span {
+  display: inline-block;
+  margin: 0.489375rem 0.605rem 0.456875rem 0.664375rem;
+  color: #ffffff;
+}
+
+#hero {
+  height: 16.0625em;
+  background: url(../images/Rectangle\ 5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#hero_text {
+  display: inline-block;
+  width: 17.0625rem;
+  height: 4.5rem;
+  font-style: normal;
+  margin: 6.125rem 1.5rem 5.4375rem 1.4375rem;
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  text-align: center;
+  letter-spacing: -0.05rem;
+  color: #ffffff;
+}
+
+#search {
+  width: 16.5625em;
+  margin-left: 1.75em;
+}
+
+#search div {
+  width: 3.1875rem;
+  height: 1.3125rem;
+  margin-top: 3.5rem;
+  line-height: 1.301875rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+#search input {
+  display: block;
+  height: 2.125em;
+  margin-top: 0.25em;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+}
+
+.movieTroll {
+  margin-top: 2.0625em;
+}
+
+#movie2 {
+  margin-bottom: 3.125em;
+}
+
+.movieCaption {
+  margin-left: 1.75rem;
+  text-align: left;
+  line-height: 1.4375rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.125rem;
+  width: 13.125rem;
+  color: #000000;
+}
+
+.frame {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  overflow-x: scroll;
+  margin-top: 1.625rem;
+}
+
+.movie {
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0.625rem;
+  position: static;
+  width: 12.5rem;
+  height: 12.5rem;
+  /* background: #e41010; */
+  background-blend-mode: multiply;
+  border-radius: 0.75rem;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0 0.8125rem;
+  text-align: center;
+}
+
+#default {
+  background-color: #292929;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 1rem;
+  align-items: flex-start;
+  padding: 0.625rem;
+  width: 12.5rem;
+  height: 12.5rem;
+  background-blend-mode: multiply;
+  border-radius: 0.75rem;
+  border: 1px solid #292929;
+  margin: auto auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 834px) {
+  .App,
+  #root,
+  #header,
+  main,
+  section {
+    width: 52.125em;
+  }
+
+  #header {
+    height: 8.75em;
+  }
+
+  #logo {
+    height: 3.75em;
+    width: 12.0625em;
+    box-sizing: border-box;
+    margin: 2.5em 20em 2.5em 20.0625em;
+  }
+
+  #logo span {
+    width: 9.79375rem;
+    height: 2.05875rem;
+    margin: 0.875rem 1.08125rem 0.81625rem 1.1875rem;
+    font-size: 1.85rem;
+    line-height: 2.05875rem;
+  }
+
+  #search {
+    width: 42.5rem;
+    margin-left: 4.8125rem;
+  }
+
+  #search div {
+    margin-top: 3.9375rem;
+    width: 4.8125rem;
+    height: 1.9375rem;
+    font-size: 1.5rem;
+    line-height: 1.953125rem;
+  }
+
+  #search input {
+    margin-top: 0.25em;
+    width: 42.5rem;
+    height: 3.375rem;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+  }
+
+  .movieTroll {
+    margin-top: 3em;
+  }
+
+  #movie2 {
+    margin-bottom: 4.1875em;
+  }
+
+  .movieCaption {
+    width: 17.4375rem;
+    line-height: 1.953125rem;
+    margin-left: 4.8125rem;
+    font-size: 1.5rem;
+  }
+
+  .frame {
+    width: 100%;
+    margin-top: 1.125rem;
+  }
+
+  .movie {
+    font-size: 1.4rem;
+    width: 18.75rem;
+    height: 18.75rem;
+    margin: 0 0.8125rem;
+  }
+
+  #default {
+    font-size: 1.4rem;
+    width: 18.75rem;
+    height: 18.75rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .App,
+  #root,
+  #header,
+  main,
+  section {
+    width: 100%;
+  }
+
+  #header {
+    height: 8.75em;
+  }
+
+  #logo {
+    margin-left: 4.8125rem;
+    margin-right: 73.125rem;
+  }
+
+  #hero {
+    padding-top: 6.8125rem;
+    padding-left: 4.8125rem;
+    padding-bottom: 9.9375rem;
+    box-sizing: border-box;
+    height: 34.375rem;
+    background: url(../images/Rectangle\ 5_big.png);
+    background-size: cover;
+  }
+
+  #hero span {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    display: block;
+    width: 30.625rem;
+    text-align: left;
+    height: 9.79375rem;
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 5.85875rem;
+  }
+
+  #search {
+    width: 90.694%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #search div {
+    width: 5.89586%;
+  }
+
+  #search input {
+    width: 100%;
+  }
+}
